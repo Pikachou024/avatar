@@ -9,7 +9,6 @@
 </head>
 <body>
 <section>
-    <h1>bonjour</h1>
     <form method="POST" action="index.php" id="submit-form">
         <div id="svg">
             <?=$svg?>
@@ -25,13 +24,19 @@
         <input id="submit-button" class="submit" type="submit" value="Générer">
     </form>
 
-    <form method="POST" action="register.php" id="submit-form">
-        <input id="avatar" type="hidden" value='' name="avatar">
-        <input type="submit" class="buttonRegister" value="Enregistrer">
+    <form method="POST" action="register.php" id="registerAvatar">
+        <input id="avatar" type="hidden" value='<?=$svg?>' name="avatar">
+        <input type="submit" id="buttonRegister" value="Enregistrer">
+    </form>
+    <form method="POST" action="download.php" id="downloadAvatar">
+        <input id="avatar" type="hidden" value='<?=$svg?>' name="avatar">
+        <input type="submit" id="buttonDownload" value="Sauvegarder">
     </form>
 
 
-    <input type="button" class="buttonDl" value="Télécharger">
+
+
+
 
 </section>
 
