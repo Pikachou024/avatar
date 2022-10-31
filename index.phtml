@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section>
+    <h1>bonjour</h1>
+    <form method="POST" action="index.php" id="submit-form">
+        <div id="svg">
+            <?=$svg?>
+        </div>
+        <div>
+            <label for="volume">Taille</label>
+            <input type="range" id="taille" name="taille" min="2" max="10" step="1">
+
+            <label for="volume">Nombre de couleur</label>
+            <input type="range" id="couleur" name="couleur" min="2" max="5" step="1">
+        </div>
+
+        <input id="submit-button" class="submit" type="submit" value="Générer">
+    </form>
+
+    <form method="POST" action="register.php" id="submit-form">
+        <input id="avatar" type="hidden" value='' name="avatar">
+        <input type="submit" class="buttonRegister" value="Enregistrer">
+    </form>
+
+
+    <input type="button" class="buttonDl" value="Télécharger">
+
+</section>
+
+<script src="js/submit.js" ></script>
+<!--<script src="js/dl.js" defer></script>-->
+<!--<script src="js/register.js" defer></script>-->
+</body>
+</html>
