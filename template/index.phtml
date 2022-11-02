@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>svg</title>
+    <title>Avatar pas chère</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,24 +24,16 @@
         <input id="submit-button" class="submit" type="submit" value="Générer">
     </form>
 
-    <form method="POST" action="register.php" id="registerAvatar">
+    <form method="POST" action="src/register.php" id="registerAvatar">
         <input id="avatar" type="hidden" value='<?=$svg?>' name="avatar">
         <input type="submit" id="buttonRegister" value="Enregistrer">
     </form>
-    <form method="POST" action="download.php" id="downloadAvatar">
+    <form method="POST" action="src/download.php" id="downloadAvatar">
         <input id="avatar" type="hidden" value='<?=$svg?>' name="avatar">
         <input type="submit" id="buttonDownload" value="Sauvegarder">
     </form>
-
-
-
-
-
-
 </section>
 
 <script src="js/submit.js" ></script>
-<!--<script src="js/dl.js" defer></script>-->
-<!--<script src="js/register.js" defer></script>-->
 </body>
 </html>

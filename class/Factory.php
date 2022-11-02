@@ -12,7 +12,7 @@ class Factory
         $this->color = new Color();
     }
 
-    function createAvatar(?int $taille,?int $nbColor): string
+    function createAvatar($taille, $nbColor): string
     {
         if($taille == null){
             $taille = rand(2,10);

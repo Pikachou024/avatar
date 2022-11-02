@@ -2,6 +2,9 @@
 
 class Color
 {
+    /*
+     * Méthode pour gérer un nombre de couleurs aléatoires souhaité
+     */
     public static function randColor(int $couleur) : array
     {
         for($i =0; $i<$couleur; $i++){

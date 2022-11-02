@@ -2,7 +2,10 @@
 
 class Avatar
 {
-    function generateAvatar($taille,$listeCouleur): array
+    /*
+     * Création d'un tableau 2D pour définir les couleurs de chaque case pour l'avatar
+     */
+    function generateAvatar(?int $taille,?array $listeCouleur): array
     {
         $arrayAvatar=[];
         $arrayX=[];
